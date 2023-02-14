@@ -10,34 +10,19 @@ def quack():
 def squeak():
     return "Squeak Squeak!"
 
-class MallardDuck:
-    def __init__(self, fly=flapping, quack=quack):
-        self.fly = fly
-        self.quack = quack
+class Duck:
+    def __init__(self, description, flybehavior, quackbehavior):
+        self.fly = flybehavior
+        self.quack = quackbehavior
+        self.type = description
+    
+    def __str__(self):
+        return str(self.type)
     
     def __repr__(self):
-        return "mallard duck"
+        return str(self)
 
-class RedheadDuck:
-    def __init__(self, fly=flapping, quack=quack):
-        self.fly = fly
-        self.quack = quack
-    
-    def __repr__(self):
-        return "redhead duck"
-
-class RubberDuck:
-    def __init__(self, fly=None, quack=squeak):
-        self.fly = no_behavior
-        self.quack = quack
-    
-    def __repr__(self):
-        return "rubber duck"
-
-class DecoyDuck:
-    def __init__(self, fly=None, quack=None):
-        self.fly = no_behavior
-        self.quack = no_behavior
-    
-    def __repr__(self):
-        return "decoy duck"
+MallardDuck = Duck("mallard duck", flapping, quack)
+RedheadDuck = Duck("redhead duck", flapping, quack)
+RubberDuck = Duck("rubber duck", no_behavior, squeak)
+DecoyDuck = Duck("decoy duck", no_behavior, no_behavior)
