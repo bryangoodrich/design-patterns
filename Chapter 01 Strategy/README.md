@@ -16,6 +16,18 @@ While most people learn OOP via Java with a strong emphasis on inheritance, a lo
 
 It should be pointed out that inheritance is an IS-A relationship (a Honda is-a subtype of car). What we should aim for are HAS-A relationships (a Honda has-a set of tires, has-a engine, etc.). 
 
+### Design Principle 3
+
+    Program to interfaces, not implementations
+
+This extends from the HAS-A relationships. By using interfaces--a class extending a set of behaviors--we can extend an object's capabilities without changing how the object is implemented. In addition, these interfaces can be dynamically changed at runtime allowing for even more flexibility in how an object is used under changing circumstances.
+
+### Strategy Pattern
+
+    Strategy - Defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithms vary independently from clients that use it.
+
+This pattern gets at everything talked about in Chapter 1. The 3 design principles outlined above are essentially the ways we can ensure we implement the strategy pattern in concrete ways. By composing objects of other objects and behaviors (interfaces), we can capture what varies independent of any client implementation. The Python code will show how this can be done using the Duck examples.
+
 ## Functional Programming Perspective
 
 As an alternative to using classes, or at least thinking in terms of objects, we can encapsulate data and behavior in a number of ways. 
