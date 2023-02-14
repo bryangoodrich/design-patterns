@@ -7,6 +7,10 @@ This script is intended for both review and execution to demonstrate the example
 """
 
 
+import simuduck as SimUDuck
+import simuduck.myduck as MyDuck
+
+
 def main():
     """TBD Fill in the overview and examples from the book in a Pythonic way"""
     pass
