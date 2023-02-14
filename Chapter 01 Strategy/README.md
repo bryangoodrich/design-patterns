@@ -24,7 +24,8 @@ This extends from the HAS-A relationships. By using interfaces--a class extendin
 
 ### Strategy Pattern
 
-    Strategy - Defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithms vary independently from clients that use it.
+    Strategy - Defines a family of algorithms, encapsulates each one, and makes them interchangeable.
+    Strategy lets the algorithms vary independently from clients that use it.
 
 This pattern gets at everything talked about in Chapter 1. The 3 design principles outlined above are essentially the ways we can ensure we implement the strategy pattern in concrete ways. By composing objects of other objects and behaviors (interfaces), we can capture what varies independent of any client implementation. The Python code will show how this can be done using the Duck examples.
 
