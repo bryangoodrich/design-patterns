@@ -1,3 +1,11 @@
+"""
+This module contains a more functional approach to composing a single Duck
+class with behaviors-as-functions instead of behaviors-as-interfaces. Since
+the point of interfaces is to provide behavior, this functionally is no 
+different. If you must encapsulate the functions into an interface-like 
+package, you can put them into a single module namespace to organize them.
+"""
+
 def no_behavior():
     return ""
 

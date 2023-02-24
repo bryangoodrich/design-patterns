@@ -1,5 +1,7 @@
 """
 SimUDuck Package
+
+This layout mirrors that from the book.
 """
 
 
